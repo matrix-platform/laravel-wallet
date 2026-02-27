@@ -1,0 +1,22 @@
+{
+    "name": "matrix-platform/laravel-wallet",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MatrixPlatform\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MatrixPlatform\\WalletServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "illuminate/support": "^12.0",
+        "matrix-platform/laravel-base": "dev-main",
+        "php": "^8.2"
+    }
+}
