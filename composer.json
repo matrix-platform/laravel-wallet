@@ -1,0 +1,31 @@
+{
+    "name": "matrix-platform/laravel-wallet",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MatrixPlatform\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MatrixPlatform\\WalletServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "illuminate/support": "^13.0",
+        "matrix-platform/laravel-base": "dev-main",
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^11.1",
+        "phpunit/phpunit": "^12.5"
+    }
+}
